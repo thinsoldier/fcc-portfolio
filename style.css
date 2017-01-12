@@ -35,7 +35,7 @@ display: flex;
 }
 
 .info {
-width: 260px;
+width: 210px;
 }
 
 .i-project-list {
@@ -79,9 +79,48 @@ display: flex;
 justify-content: space-between;
 }
 
+.tag-list {
+list-style-type: none;
+margin:0;
+padding:0;
+}
+
+.viewports {
+	margin: auto;
+}
+
+.iframe-toggler {
+display: flex;
+}
+
+.iframe-toggler span {
+flex: 1;
+background: #eee;
+text-align: center;
+padding: 1em;
+opacity: 0.5;
+}
+
+.iframe-toggler .active {
+opacity: 1;
+}
+
+.iframe-toggler span:hover {
+cursor: pointer;
+background: #fff;
+}
+
+.frame-masker {
+display:none;
+}
+
+.frame-masker.active {
+display:block;
+}
+
 .mask-big-frame {
-	width: 704px;
-	height: 644px;
+	max-width: 676px;
+	height: 614px;
 	overflow: hidden;
 	border: 2px solid #eee;
 }
@@ -90,7 +129,7 @@ justify-content: space-between;
 	width: 1400px;
 	height: 1270px;
 	transform-origin: 0 0;
-	transform: scale(0.5);
+	transform: scale(0.48);
 }
 
 .mask-small-frame {

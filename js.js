@@ -70,5 +70,11 @@ var prev = function(){
 	updateView();
 }
 
+var toggleViewports = function() {
+	$('.frame-masker, .iframe-toggler span').toggleClass('active');
+	
+}
+
 $('.i-next-proj').click( next );
 $('.i-prev-proj').click( prev );
+$('.iframe-toggler').click( toggleViewports );
